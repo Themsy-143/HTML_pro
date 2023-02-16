@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        table {
+          font-family: 'Times New Roman', Times, serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th {
+            border: 2px solid #131313;
+            text-align: center;
+            padding: 8px;
+
+        }
+        td {
+            border: 2px solid #0d0d0d;
+            text-align: left;
+            padding: 8px;
+        }   
+
+        tr:nth-child(even) {
+            background-color: #b8d0e6;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #bab6e3;
+        }
+    </style>
+
+    <style>
+        form {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20px;
+            text-align: center;
+            background-color: #aab8bf;
+        }
+        .checkbox {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20px;
+            text-align: left;
+            background-color: #aab8bf;
+        }
+    </style>
+
+    <style>
+        select {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20px;
+            text-align: left;
+            background-color: #9d7ba2;
+        }
+    </style>
+
+    <style>
+        textarea { 
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20px;
+            text-align: left;
+            background-color: #c7e2ee;
+        }
+    </style>
+
+    <style>
+        button {
+            font-family: 'Times New Roman', Times, serif;
+            font-size:20px;
+            text-align: center;
+            background-color: #dc95b9;   
+        }
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <th> Sr.No. </th>
+        <th> Name </th>
+        <th> Python </th>
+        <th> HTML </th>
+        <th> JavaScript </th>
+        <th> CSS </th>
+        <th> GRADE </th>
+    </tr>
+    <tr> 
+        <td> 1. </td>
+        <td> Themsy </td>
+        <td> 45 </td>
+        <td> 40 </td>
+        <td> 39 </td>
+        <td> 40 </td>
+        <td> A </td>
+    </tr>
+    <tr> 
+        <td> 2. </td>
+        <td> Bhavisha </td>
+        <td> 40 </td>
+        <td> 30 </td>
+        <td> 35 </td>
+        <td> 30 </td>
+        <td> A </td>
+    </tr>
+    <tr> 
+        <td> 3. </td>
+        <td> Harsh </td>
+        <td> 49 </td>
+        <td> 50 </td>
+        <td> 45 </td>
+        <td> 45 </td>
+        <td> A+ </td>
+    </tr>
+    <tr> 
+        <td> 4. </td>
+        <td> Manjit </td>
+        <td> 30 </td>
+        <td> 35 </td>
+        <td> 39 </td>
+        <td> 35 </td>
+        <td> B </td>
+    </tr>
+</table>
+<form autocomplete="on"> 
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" value="  "><br>
+    <label for="lastname">Last name:</label><br>
+    <input type="text" id="lastname" name="lastname" value="   "><br>
+    <label for="birth date">Birth date:</label><br>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+    <input type="submit" value="Submit" style = "font-size:20px";>
+    </label>
+</form>
+
+<p> Which is your favourite language &# </p>
+<form>
+    <div class="checkbox">
+    <input type="checkbox" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+    <input type="checkbox" id="python" name="fav_language" value="Python">
+    <label for="python">Python</label>
+    </div>
+</form>
+
+<label for="lang">Choose a language :</label>
+<select id="lang" name="language">
+  <option value="HTML">HTML</option>
+  <option value="CSS">css</option>
+  <option value="JavaScript">JavaScript</option>
+  <option value="Python">Python</option>
+  <option value="PHP">PHP</option>
+  <option value="C or C++">C or C++</option>
+</select><br>
+
+<p> Add comments in the box given below: </p>
+
+<textarea name="add comments" rows="5" cols="30">
+    
+</textarea><br>
+
+<div style=" text-align: center;">   
+<button  type="button" onclick="alert('Hello...&#128512&#10084&#127800')">Click Me! </button>
+</div>
+
+</body>
+</html>
