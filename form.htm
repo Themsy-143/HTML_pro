@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: rgb(191, 172, 195);
+        }
+        td {
+            font-family:Times 'Times New Roman', Times, serif ;
+            text-align: center;
+            font-size: 70px;
+        }
+        form {
+            font-family:Times 'Times New Roman', Times, serif ;
+            font-size: 30px;
+        }
+        input[type=text],input[type=email],input[type=date] select {
+            width: 100%;
+            font-family:Times 'Times New Roman', Times, serif ;
+            font-size: 20px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px rgb(228, 138, 205);
+        }
+        input[type=submit] {
+            background-color: #6591bd;
+            font-family:Times 'Times New Roman', Times, serif ;
+            font-size: 30px;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h3> Hello </h3>
+                <h1> I'm Themsy</h1>
+            </td>
+            <td> <img src="2.jpeg" alt="Me"></td>
+        </tr>
+    </table>
+
+    <form autocomplete="on">
+        <label for="firstname">First name: </label><br>
+        <input type="text" id="firstname" name="firstname" value=" "><br>
+        <label for="lastname">Last name: </label><br>
+        <input type="text" id="lastname" name="lastname" value=" "><br>
+        <label for="Email">Email: </label><br>
+        <input type="email" id="Ename" name="Email" value=" "><br>
+        <label for="dob">Date of Birth: </label><br>
+        <input type="date" id="dob" name="dob" value=" "><br>
+        <label for="Comment">Any Comments... </label><br>
+        <input type="text" id="Comment" name="Comment" value=" "><br>
+        <input type="submit"  onclick="alert('Your Form is submitted... &#127775')" value="Submit">
+    </form>    
+</body>
+</html>

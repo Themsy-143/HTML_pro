@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            /* background-image: url("num.jpeg");
+            opacity:30%; */
+            font-size: 50px;
+            color:black;
+            color: rgb(55, 84, 109);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            margin-top: 15%;
+            
+        }
+        /* div{
+            background-image:  url("num.jpeg");
+            background-position: absolute;
+            
+        }
+        /* img{
+            background-position: 100%;
+            filter: opacity(30%);
+        } */ */
+    </style>
+</head>
+
+<body>
+    <!-- <div> -->
+        <!-- <img src="num.jpeg"> -->
+        <!-- <form action=""> -->
+            <label for="fname">Enter Number: </label><br>
+            <input type="number" id="id1" name="num" value=" "><br>
+            <button style = "font-size: 20px; background-color: rgb(162, 173, 194); font-family: cursive;"onclick="myFunction(document.getElementById('id1').value)"><b>submit</b></button>
+            <p id="demo"></p>
+        <!-- </form> -->
+    <!-- </div> -->
+    <script>
+        function myFunction(x)
+        {
+            for (let i = 1; i <= parseInt(x); i++) 
+            {
+                // const img = document.createElement("img");
+                // img.src = "penguin.jpeg";
+                // document.body.appendChild(img);
+                // document.write();
+                document.getElementById("demo").innerHTML += "<img src='penguin.jpeg'> "; 
+            }
+        }
+    </script>
+</body>
+</html>
