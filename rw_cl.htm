@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: rgb(220, 207, 233);
+        }
+        table,td{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 30px ;
+            border: 2px;
+            border-style:dashed;
+       }
+       form{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: left;
+            font-size: 30px ;
+       }
+    </style>
+</head>
+
+<body>
+
+    <script>  
+
+        function getdata(){
+            var col=document.myform.col.value; 
+            var main = document.getElementById("main");
+
+                for(let i=1; i<=col; i++)
+                {
+                    var para = document.createElement("g"); 
+                    para.setAttribute("id", "h" + i); 
+                    main.appendChild(para);
+                    document.getElementById("h" + i).innerText = "enter data (" + i + ") : "; 
+                    var x = document.createElement("INPUT"); 
+                    x.setAttribute("id", "g" + i); 
+                    x.setAttribute("type", "text"); 
+                    var b = document.getElementById("h" + i); 
+                    b.appendChild(x); 
+                }  
+
+            var sub = document.createElement("INPUT"); 
+            sub.setAttribute("type", "button");
+            sub.setAttribute("id", "b");
+            sub.setAttribute("onclick", "printTable()");
+            sub.setAttribute("style" , "font-size: 20px; background-color: rgb(162, 173, 194); font-family: cursive;") ;
+            sub.setAttribute("value", "Print Table");
+            main.appendChild(sub); 
+
+        }
+        function printTable(){  
+        var row=document.myform.row.value;  
+        var col=document.myform.col.value;  
+        for(let i=1; i<=row; i++)
+        {   
+            document.getElementById("tbl").innerHTML += "<tr id="+ i+">"+ "" +"  </tr>"
+            for(let j=1; j<=col; j++)
+            {
+                // console.log(document.getElementById("g" + j));
+                document.getElementById(i).innerHTML += "<td id='d'>"+ document.getElementById("g" + j).value +"  </td>"
+            }
+        }
+        }  
+
+    </script>  
+
+    <form name="myform" > 
+
+        No of Rows: <input type="number" name="row"><br/>  
+        No of Cols: <input type="number" name="col"><br/> 
+        <div id="main"></div>
+        <p id="g"></p>
+        <p id="b"></p>
+        <button style = "font-size: 20px; background-color: rgb(162, 173, 194); font-family: cursive;" type="button"  onclick=" getdata()">Get Data</button>     
+        <table id="tbl"> </table>
+
+    </form>  
+</body>
+</html>
